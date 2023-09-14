@@ -1,0 +1,50 @@
+body {
+  background-color: rgb(10, 10, 10);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+img {
+  width: 400px;
+  height: 70px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 47.5%;
+  padding: 10px;
+  border: none;
+  border: 2px solid rgb(255, 255, 255);
+  font-size: 24px;
+  border-radius: 5px;
+  margin-top: 10px;
+  background-color: transparent;
+  color: aqua;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, cursive;
+}
+
+
+.movies-section {
+  max-width: 100%;
+  margin: 0 auto;
+}
+.movies-gallery {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  color: aliceblue;
+}
+.movie-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+.movie-card img {
+  width: 230px;
+  height: 300px;
+}
