@@ -64,3 +64,10 @@ p.not-liked {
 p.liked:hover, p.not-liked:hover {
   cursor: pointer;
 }
+
+.year-likes-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+  align-items: center;
+}
