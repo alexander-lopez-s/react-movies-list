@@ -60,3 +60,7 @@ p.not-liked {
   color: rgb(255, 255, 255);
   font-size: 20px;
 }
+
+p.liked:hover, p.not-liked:hover {
+  cursor: pointer;
+}
