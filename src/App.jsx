@@ -7,13 +7,16 @@ import { useState } from "react";
 
 const App = () => {
   const [searchTerm, setSearchTerm] = useState(""); 
-  const filteredMovies = movieListData.filter((movie) =>
-    movie.Title.toLowerCase().includes(searchTerm.toLowerCase())
-  );
 
+  //Function to search for the specific movie
   const handleSearchChange = (search) => {
     setSearchTerm(search);
   };
+    
+  //Function to filter the movies 
+    const filteredMovies = movieListData.filter((movie) =>
+    movie.Title.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
   return (
     <div className="main-container">

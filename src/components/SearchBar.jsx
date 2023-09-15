@@ -1,9 +1,11 @@
+import { useState } from "react";
 const SearchBar = ({ onSearchChange }) => {
-  const handleOnChange = (e) => {
-    const userInput = e.target.value;
-    onSearchChange(userInput); 
-  };
 
+const [input, setInput] = useState('');
+const handleOnChange = (e) => {
+    setInput(e.target.value.toString());
+    onSearchChange(input)
+}
   return (
     <div>
       <input
